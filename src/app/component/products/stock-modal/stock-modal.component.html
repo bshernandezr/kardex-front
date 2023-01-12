@@ -1,0 +1,16 @@
+<div style=" margin: auto; align-items: center; margin-top: 20%; text-align: center;">
+  <h3>
+    Ingresa la cantidad que quieres {{operation}}
+  </h3>
+  <br>
+  <button mat-fab [disabled]="addDisable()" (click)="addValue()" aria-label="Example icon button with a heart icon">
+    +1
+  </button>
+  <label style="margin: 10px;">{{value}}</label>
+  <button [disabled]="subtractDisable()" (click)="subtractValue()" mat-fab aria-label="Example icon button with a heart icon">
+    -1
+  </button> <br> <br>
+  <button mat-button color="secondary" (click)="submit()">Confirmar</button>
+
+
+</div>

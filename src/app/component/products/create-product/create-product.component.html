@@ -1,0 +1,24 @@
+<form class="example-form" style="margin: auto; text-align: center; margin-top: 40px;" [formGroup]="productForm" (submit)="createProduct()">
+  <mat-form-field class="example-full-width" style="width: 500px !important;">
+    <mat-label>id Producto</mat-label>
+    <input type="number" matInput placeholder="123" value="11" formControlName="id">
+  </mat-form-field> <br>
+  <mat-form-field class="example-full-width" style="width: 500px !important;">
+    <mat-label>Descripcion</mat-label>
+    <input matInput placeholder="Hulk" value="Hulk" formControlName="description">
+  </mat-form-field> <br>
+  <mat-form-field class="example-full-width" style="width: 500px !important;">
+    <mat-label>Precio</mat-label>
+    <input type="number" min="1" matInput placeholder="90000" value="0" formControlName="price">
+  </mat-form-field> <br>
+  <mat-form-field class="example-full-width" style="width: 500px !important;">
+    <mat-label>Stock</mat-label>
+    <input type="number" min="1" matInput placeholder="100" value="0" formControlName="stock">
+  </mat-form-field> <br>
+  <mat-form-field class="example-full-width" style="width: 500px !important;">
+    <mat-label>Categoria</mat-label>
+    <input matInput placeholder="Juguetes" value="Juguetes" formControlName="category">
+  </mat-form-field> <br>
+  <button [disabled]="!productForm.valid" type="submit"  mat-raised-button color="primary">Crear Producto</button> &nbsp;&nbsp;&nbsp;
+  <button (click)="returnToSummary()" mat-raised-button color="warn">Volver</button>
+</form>
