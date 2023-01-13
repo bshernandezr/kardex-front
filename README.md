@@ -11,3 +11,5 @@ npm i
 ```
 npm run start
 ```
+
+Proyecto corriendo en el puerto 4200 por defecto : http://localhost:4200/
